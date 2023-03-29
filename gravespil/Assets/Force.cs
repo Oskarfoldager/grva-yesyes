@@ -4,13 +4,13 @@ using System.Collections;
 public class Force : MonoBehaviour
 {
     // Movement speed
-    public float speed = 2;
+    public float speed = 7;
     private float timeofnewspeed;
 
     // Use this for initialization
     void Start()
     {
-        timeofnewspeed = Time.time + 18;
+        timeofnewspeed = Time.time + 100;
         // Fly towards the right
     }
 
@@ -21,7 +21,7 @@ public class Force : MonoBehaviour
         {
             Debug.Log("newspeed");
             Destroy(this.gameObject);
-            timeofnewspeed += 18;
+            timeofnewspeed += 100;
         }
         /*moving the eraser*/
         transform.position = new Vector3(transform.position.x + speed, transform.position.z);

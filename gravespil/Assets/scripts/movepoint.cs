@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class movepoint : MonoBehaviour
 {
-    public int maxY;
-    public int minY;
-    public int maxX;
-    public int minX;
+    public float maxY;
+    public float minY;
+    public float maxX;
+    public float minX;
 
     public int minROT;
     public int maxROT;
@@ -24,7 +24,7 @@ public class movepoint : MonoBehaviour
         {
             pointtomove.transform.position = new Vector3(pointtomove.transform.position.x, pointtomove.transform.position.y - movespeed, pointtomove.transform.position.z);
         }
-        if (Input.GetKey(KeyCode.A) && pointtomove.transform.position.x > minX)
+        if (Input.GetKey(KeyCode.A) && pointtomove.transform.position.x > minX - 2.9f)
         {
             pointtomove.transform.position = new Vector3(pointtomove.transform.position.x - movespeed, pointtomove.transform.position.y, pointtomove.transform.position.z);
         }
@@ -32,7 +32,7 @@ public class movepoint : MonoBehaviour
         {
             pointtomove.transform.position = new Vector3(pointtomove.transform.position.x, pointtomove.transform.position.y + movespeed, pointtomove.transform.position.z);
         }
-        if (Input.GetKey(KeyCode.D) && pointtomove.transform.position.x < maxX)
+        if (Input.GetKey(KeyCode.D) && pointtomove.transform.position.x < maxX - 2.9f)
         {
             pointtomove.transform.position = new Vector3(pointtomove.transform.position.x + movespeed, pointtomove.transform.position.y, pointtomove.transform.position.z);
         }
@@ -42,7 +42,6 @@ public class movepoint : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Q))
         {
-            //pointtomove.transform.eulerAngles = new Vector3(pointtomove.transform.rotation.eulerAngles.x, pointtomove.transform.rotation.eulerAngles.y, pointtomove.transform.rotation.eulerAngles.z - rotatespeed);
             z = z - rotatespeed;
             
         }
@@ -60,7 +59,7 @@ public class movepoint : MonoBehaviour
         }
 
         //float newZ = Mathf.Max(Mathf.Min(pointtomove.transform.rotation.eulerAngles.z, maxROT), minROT);
-        Debug.Log("" + minROT + " " + maxROT + " " + pointtomove.transform.rotation.eulerAngles.z + " " + z);
+        Debug.Log("" + pointtomove.transform.position.x);
         
         // && pointtomove.transform.rotation.eulerAngles.z >= minROT && pointtomove.transform.rotation.eulerAngles.z <= maxROT
         pointtomove.transform.eulerAngles = new Vector3(pointtomove.transform.rotation.eulerAngles.x, pointtomove.transform.rotation.eulerAngles.y, z);
