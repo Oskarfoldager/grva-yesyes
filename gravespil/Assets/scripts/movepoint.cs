@@ -59,7 +59,7 @@ public class movepoint : MonoBehaviour
         }
 
         //float newZ = Mathf.Max(Mathf.Min(pointtomove.transform.rotation.eulerAngles.z, maxROT), minROT);
-        Debug.Log("" + pointtomove.transform.position.x);
+        //Debug.Log("" + pointtomove.transform.position.x);
         
         // && pointtomove.transform.rotation.eulerAngles.z >= minROT && pointtomove.transform.rotation.eulerAngles.z <= maxROT
         pointtomove.transform.eulerAngles = new Vector3(pointtomove.transform.rotation.eulerAngles.x, pointtomove.transform.rotation.eulerAngles.y, z);
