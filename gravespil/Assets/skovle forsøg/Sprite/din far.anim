@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Animation
+  m_Name: din far
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 584467366, guid: bc3729e2cf452004fa14925bdef62f60, type: 3}
-    - time: 0.6666667
+    - time: 0.083333336
       value: {fileID: 1391251570, guid: bc3729e2cf452004fa14925bdef62f60, type: 3}
-    - time: 1.1666666
+    - time: 0.16666667
       value: {fileID: -1631438520, guid: bc3729e2cf452004fa14925bdef62f60, type: 3}
     attribute: m_Sprite
     path: 
@@ -52,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.25
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
