@@ -24,6 +24,6 @@ public class Force : MonoBehaviour
             timeofnewspeed += 100;
         }
         /*moving the eraser*/
-        transform.position = new Vector3(transform.position.x + speed, transform.position.z);
+        transform.position = new Vector3(transform.position.x + speed, transform.position.y);
     }
 }

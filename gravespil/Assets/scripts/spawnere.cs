@@ -17,9 +17,11 @@ public class spawnere : MonoBehaviour
         List<GameObject> enemys = new List<GameObject>() { enemy1, enemy2, enemy3 };
         if (Time.time > nextactiontime)
         {
-            Debug.Log("Attempting to spawn enemy");
-            GameObject thisproj = Instantiate(enemys[Random.Range(0, 3)], transform.position, transform.rotation);
-            nextactiontime += Random.Range(3, 16);
+            Random.InitState(System.DateTime.Now.Millisecond);
+            int rand = Random.Range(0, 3);
+            Debug.Log("Attempting to spawn enemy "+ transform.position + " " + rand);
+            GameObject thisproj = Instantiate(enemys[rand], transform.position, transform.rotation);
+            nextactiontime += Random.Range(3, 17);
         }
 
 
