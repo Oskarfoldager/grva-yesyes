@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class checkdirt : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class checkdirt : MonoBehaviour
         if (AllIsAbove)
         {
             Debug.Log("all dirt is above grass level");
+            SceneManager.LoadScene(4);
         }
     }
 }

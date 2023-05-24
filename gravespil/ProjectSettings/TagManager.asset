@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - tegn
   - 1+
   - -1
-  - tegn
+  - dirt
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - ui
+  - 
   - 
   - 
   - 

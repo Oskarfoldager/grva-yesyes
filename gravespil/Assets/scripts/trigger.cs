@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class trigger : MonoBehaviour
 {
-    public int enemysonscreen;
+    public static int enemysonscreen;
     public GameObject tegn;
     // Start is called before the first frame update
     void Start()
