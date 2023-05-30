@@ -10,6 +10,7 @@ public class spawnere : MonoBehaviour
     public GameObject enemy3;
     // public float period = 20f;
     private float nextactiontime = 0.2f;
+    public int maxrand = 17;
 
     // Start is called before the first frame update
     void Update()
@@ -21,7 +22,7 @@ public class spawnere : MonoBehaviour
             int rand = Random.Range(0, 3);
             Debug.Log("Attempting to spawn enemy "+ transform.position + " " + rand);
             GameObject thisproj = Instantiate(enemys[rand], transform.position, transform.rotation);
-            nextactiontime += Random.Range(3, 17);
+            nextactiontime += Random.Range(3, maxrand);
         }
 
 

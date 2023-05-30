@@ -7,6 +7,6 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public void playbutt()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
     }
 }

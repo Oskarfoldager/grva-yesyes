@@ -28,7 +28,7 @@ public class checkdirt : MonoBehaviour
         if (AllIsAbove)
         {
             Debug.Log("all dirt is above grass level");
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
     }
 }
