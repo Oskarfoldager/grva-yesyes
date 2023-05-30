@@ -4,7 +4,7 @@ using System.Collections;
 public class Force : MonoBehaviour
 {
     // Movement speed
-    public static float speed = 0.01f;
+    public static float speed = 0.1f;
     private float timeofnewspeed;
 
     // Use this for initialization
