@@ -9,7 +9,7 @@ public class spawnere : MonoBehaviour
     public GameObject enemy2;
     public GameObject enemy3;
     // public float period = 20f;
-    private float nextactiontime = 0;
+    private float nextactiontime = 0.2f;
 
     // Start is called before the first frame update
     void Update()
